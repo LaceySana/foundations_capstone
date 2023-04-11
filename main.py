@@ -14,8 +14,10 @@ def create_table(cursor):
 
 result = create_table(cur)
 
-class User():
-    pass
+class User:
+    
+    def __init__(self, f_name, l_name, phone, email, password,):
+        pass
 
 def check_login(uname,pword):
     pass
@@ -57,7 +59,6 @@ def get_average(user_id):
     for i in scores:
         average += i
     return average
-    
 
 def user_home_page():
     pass
@@ -78,3 +79,4 @@ while True:
     else:
         print("The email or password you entered is incorrect.")
         continue
+
